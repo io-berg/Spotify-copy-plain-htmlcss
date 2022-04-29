@@ -159,10 +159,10 @@ main {
   max-width: 400px;
 }
 
-#freeCard {
+.freeCard {
   background-image: url(../images/green-blobs.svg);
   background-color: #2941ab;
-  background-position: center center;
+  background-position: right bottom;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -178,7 +178,7 @@ main {
   color: #1ed760;
 }
 
-#freeCardContent .cardBtn {
+.freeCardContent .cardBtn {
   background-color: #1ed760;
   color: #2941ab;
 }
@@ -200,12 +200,17 @@ footer {
 
 .footerTopContainer {
   display: flex;
-  padding: 1rem;
   width: 100%;
   justify-content: space-between;
 }
 
 .footerLinksContainer {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.footerLinkGroup {
   padding-top: 1.3rem;
   display: flex;
   flex-direction: column;
@@ -248,7 +253,6 @@ footer {
   flex: 1;
   flex-direction: column;
   padding-top: 1.5rem;
-  padding: 1rem;
   width: 100%;
   row-gap: 1rem;
 }
@@ -268,7 +272,6 @@ footer {
   color: rgb(131, 131, 131);
   text-decoration: none;
   font-size: 0.8rem;
-  padding: 0.5rem;
 }
 
 .copyright {
@@ -295,5 +298,30 @@ footer {
 
   #headerbox {
     width: 990;
+  }
+
+  .freeCardContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .freeCardContent .cardBtnContainer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .freeCardContent h2 {
+    text-align: center;
+  }
+
+  .freeCardContent h3 {
+    text-align: center;
+  }
+
+  .freeCard {
+    background-image: url(/images/circles-tablet.svg);
+    background-size: auto 181%;
+    background-position: center center;
   }
 }

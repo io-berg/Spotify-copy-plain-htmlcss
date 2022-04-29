@@ -15,6 +15,27 @@ header {
   padding: 1rem;
 }
 
-.logo {
-  height: 30px;
+footer .logo {
+  height: 20%;
+}
+
+.footerLinksContainer {
+  justify-content: space-between;
+}
+
+.footerTopContainer {
+  flex-direction: column;
+  padding: 0.8rem;
+}
+
+.footerBottomContainer {
+  padding: 0.8rem;
+}
+
+.footerSocialsLinksContainer {
+  margin-left: 0;
+}
+
+.footerTopContainer .logo {
+  width: 100px;
 }

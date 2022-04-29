@@ -7,6 +7,20 @@
   text-decoration: underline;
 }
 
+.container {
+  width: 100%;
+  max-width: 1170px;
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
 /* HEADER  */
 
 header {
@@ -20,12 +34,12 @@ header {
   align-items: center;
 }
 
-#headerbox {
+.headerbox {
   display: flex;
-  width: 1170px;
-  margin-left: 1rem;
-  margin-right: 1rem;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
 
 .logo {
@@ -51,7 +65,7 @@ header {
   color: #38c63c;
 }
 
-#header-burger {
+.header-burger {
   display: none;
 }
 
@@ -108,18 +122,17 @@ main {
   padding: 0.1rem;
 }
 
-#premiumCard {
+.premiumCard {
   background-color: #993399;
   color: white;
   display: flex;
   justify-content: center;
 }
 
-#premiumCardContent {
+.premiumCardContent {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1170px;
   padding: 1rem;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -156,11 +169,11 @@ main {
   height: 600px;
 }
 
-#freeCardContent {
+.freeCardContent {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  width: 1170px;
   margin-top: 4rem;
   color: #1ed760;
 }
@@ -187,7 +200,8 @@ footer {
 
 .footerTopContainer {
   display: flex;
-  width: 1170px;
+  padding: 1rem;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -231,9 +245,11 @@ footer {
 
 .footerBottomContainer {
   display: flex;
+  flex: 1;
   flex-direction: column;
   padding-top: 1.5rem;
-  width: 1170px;
+  padding: 1rem;
+  width: 100%;
   row-gap: 1rem;
 }
 
@@ -261,7 +277,15 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) {
-  #premiumCardContent {
+  .container {
+    max-width: 1000px;
+  }
+
+  .cardTitleText {
+    text-align: center;
+  }
+
+  .premiumCardContent {
     flex-wrap: wrap;
   }
 

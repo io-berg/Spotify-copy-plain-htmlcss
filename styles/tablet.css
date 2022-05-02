@@ -2,8 +2,16 @@
   max-width: 700px;
 }
 
+.freeCard {
+  height: 480px;
+}
+
 header {
-  height: 45px;
+  height: 50px;
+}
+
+header .logo {
+  height: 30px;
 }
 
 .header-links-container {
@@ -21,6 +29,7 @@ footer .logo {
 
 .footerLinksContainer {
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .footerTopContainer {

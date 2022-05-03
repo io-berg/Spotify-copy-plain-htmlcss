@@ -6,6 +6,6 @@
 
 ## Avgränsningar:
 
-Iconer används på bara ett ställe, menyiconen när sidan sätts i tablet läge. Detta för att Spotify inte använder av andra iconer.
+Iconer används på bara ett ställe: menyiconen när sidan sätts i tablet läge. Detta för att Spotify inte använder av andra iconer.
 
 Fonten som används är inte en exact match så en liknande font används.

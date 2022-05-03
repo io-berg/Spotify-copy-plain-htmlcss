@@ -192,10 +192,6 @@ footer {
   row-gap: 2rem;
 }
 
-.footerTopContainer {
-  width: 100%;
-}
-
 .footerLinksContainer {
   flex: 1;
 }

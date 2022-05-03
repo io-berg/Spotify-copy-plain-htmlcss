@@ -14,12 +14,12 @@
 
   <body>
     <!--- Header -->
-    <header>
-      <div class="container headerbox">
+    <header class="flex center">
+      <div class="container flex justifyBetween headerbox">
         <!--- Logo -->
         <img class="logo" src="./images/Spotify_Logo_White.png" />
         <!--- Nav-links -->
-        <div class="header-links-container">
+        <div class="header-links-container flex justifyBetween">
           <a class="header-link" href="#">Premium</a>
           <a class="header-link" href="#">Support</a>
           <a class="header-link" href="#">Ladda ned</a>
@@ -36,11 +36,11 @@
       </div>
     </header>
     <!--- Main content -->
-    <main class="content">
+    <main class="flex column">
       <!--- Get premium ad -->
-      <div class="premiumCard">
-        <div class="container premiumCardContent">
-          <div id="premiumInfo">
+      <div class="premiumCard flex">
+        <div class="container premiumCardContent flex center">
+          <div class="premiumInfo flex column">
             <h4 class="cardTitleText">SPOTIFY PREMIUM</h4>
             <h2 class="cardHeader">Få tre månader med Premium gratis</h1>
             <h3 class="cardBodyText">
@@ -52,16 +52,16 @@
                 <p class="">FÅ TRE MÅNADER GRATIS</p>
               </div>
             </div>
-            <p id="premiumLegalText">
+            <p class="premiumLegalText">
               Endast Individual-plan. Därefter 109,00 kr/månad.
               <span class="underLine">Villkor gäller.</span>
               Erbjudandet gäller endast användare som inte redan har testat
               Premium. Erbjudandet upphör den 12 maj 2022.
             </p>
           </div>
-          <div id="premiumRight">
+          <div class="premiumRight">
             <img
-              id="premiumImg"
+              class="premiumImg"
               src="./images/premiumCardImage.jpg"
               alt="premium card image"
             />
@@ -69,8 +69,8 @@
         </div>
       </div>
       <!--- Get free ad -->
-      <div class="freeCard">
-        <div class="container freeCardContent">
+      <div class="freeCard flex">
+        <div class="container freeCardContent flex column">
           <h4 class="cardTitleText">SPOTIFY FREE</h4>
           <h2 class="cardHeader">Listening is everything</h1>
           <h3 class="cardBodyText">
@@ -83,18 +83,19 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
+    <!-- FOOTER  -->
+    <footer class="footer flex column center">
       <div class="container flex column">
-        <div class="footerTopContainer">
+        <div class="footerTopContainer flex justifyBetween">
           <img class="logo" src="./images/Spotify_Logo_White.png" alt="spotify logo">
-          <div class="footerLinksContainer">
-            <div class="footerLinkGroup">
+          <div class="footerLinksContainer flex justifyAround">
+            <div class="footerLinkGroup flex column">
               <h6 class="footerLinksTitle">FÖRETAGET</h6>
               <a class="footerLink" href="#">Om</a>
               <a class="footerLink" href="#">Jobb</a>
               <a class="footerLink" href="#">For the Record</a>
             </div>
-            <div class="footerLinkGroup">
+            <div class="footerLinkGroup flex column">
               <h6 class="footerLinksTitle">COMMUNITIES</h6>
               <a class="footerLink" href="#">För artister</a>
               <a class="footerLink" href="#">Utvecklare</a>
@@ -102,21 +103,22 @@
               <a class="footerLink" href="#">Investerare</a>
               <a class="footerLink" href="#">Försäljare</a>
             </div>
-            <div class="footerLinkGroup">
+            <div class="footerLinkGroup flex column">
               <h6 class="footerLinksTitle">ANVÄNDBARA LÄNKAR</h6>
               <a class="footerLink" href="#">Support</a>
               <a class="footerLink" href="#">Webbspelaren</a>
               <a class="footerLink" href="#">Gratis mobilapp</a>
             </div>
           </div>
-          <div class="footerSocialsLinksContainer">
-            <div class="socialsIconContainer">
+          <!-- SOCIAL MEDIA LINKS  -->
+          <div class="footerSocialsLinksContainer flex">
+            <div class="socialsIconContainer flex center">
               <img class="socialsIcon" src="./images/instagram.svg" alt="instagram icon">
             </div>
-            <div class="socialsIconContainer">
+            <div class="socialsIconContainer flex center">
               <img class="socialsIcon" src="./images/twitter.svg" alt="instagram icon">
             </div>
-            <div class="socialsIconContainer">
+            <div class="socialsIconContainer flex center">
               <img class="socialsIcon" src="./images/facebook.svg" alt="instagram icon">
             </div>
           </div>
@@ -125,6 +127,7 @@
           <div class="country">
             <img src="./images/globe.svg" alt="globe"> Sverige
           </div>
+          <!-- LEGAL INFO  -->
           <div class="footerLegals">
             <div class="bottomFooterLeft">
               <a class="legalFooterLink" href="#">Juridisk information</a>
